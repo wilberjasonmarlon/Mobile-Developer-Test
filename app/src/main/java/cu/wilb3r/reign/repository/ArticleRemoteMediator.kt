@@ -30,29 +30,7 @@ class ArticleRemoteMediator(
                 LoadType.REFRESH -> FIRST_PAGE
                 LoadType.PREPEND -> return MediatorResult.Success(endOfPaginationReached = true)
                 LoadType.APPEND -> {
-                    getKeys()
-                    //obtener el next key de la ultima pagina con datos
-                    //pagina actual = next key / page size
-                    //pagina siguiente = pagina actual + 1
-/*                    state.pages.findLast { it.data.isNotEmpty() }?.nextKey?.div(state.config.pageSize)
-                        ?.plus(1)
-                    //obtener la pagina actual de la ultima pagina con datos + 1
-                        ?: state.pages.findLast { it.data.isNotEmpty() }?.data?.lastOrNull()?.page
-                            ?.plus(1)
-                        //por default retornar la pagina incial si tod0 falla*/
-                    ?: FIRST_PAGE
-
-
-
-                    // getKeys()
-                    //val key = getKeys()
-                    //if (key != null && key >= 0) key
-                    //else FIRST_PAGE
-//                    val lastItem = state.firstItemOrNull()
-//                        ?: return MediatorResult.Success(
-//                            endOfPaginationReached = true
-//                        )
-//                    lastItem.page
+                    getKeys() ?: FIRST_PAGE
                 }
             }
             println(">> Page: $page")
