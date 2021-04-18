@@ -15,7 +15,7 @@
 * ✔️ [Paging 3.0](https://developer.android.com/topic/libraries/architecture/paging/v3-overview)
 
 
-### How to play
+## How to play
 ```
 1-Git clone
 2-Use Android Studio(4.1 or up preview version) /File/Open
