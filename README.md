@@ -11,6 +11,7 @@
 * ✔️ [View binding](https://developer.android.com/topic/libraries/view-binding)
 * ✔️ [Coroutines](https://developer.android.com/topic/libraries/architecture/coroutines)
 * ✔️ [AndroidX](https://developer.android.com/jetpack/androidx)
+* ✔️ [Retrofit 2](https://square.github.io/retrofit/)
 * ✔️ [Room](https://developer.android.com/topic/libraries/architecture/room)
 * ✔️ [Paging 3.0](https://developer.android.com/topic/libraries/architecture/paging/v3-overview)
 
