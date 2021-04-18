@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Reign</string>
+    <string name="text_retry">Retry</string>
+    <string name="crash_text">Ups , send us the error to fix it, thanks ;)</string>
+    <string name="back">Back</string>
+    <string name="delete">Delete</string>
+    <string name="no_content">No content here</string>
+    <string name="retry">Please try again.</string>
+
+</resources>
