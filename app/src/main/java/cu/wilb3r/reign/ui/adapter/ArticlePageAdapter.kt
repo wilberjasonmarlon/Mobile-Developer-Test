@@ -45,13 +45,11 @@ class ArticlePageAdapter :
                             onItemSwipeListener?.invoke(view!!, item, position)
                             return false
                         }
-
                     })
                 }
             }
         }
     }
-
 
     class ViewHolder(val binding: ItemArticleBinding) :
         RecyclerView.ViewHolder(binding.root) {
@@ -59,7 +57,7 @@ class ArticlePageAdapter :
         fun bind(item: DBArticle) {
             binding.apply {
                 val s = "${item.author} - " + PrettyTime(Locale.ENGLISH)
-                    .formatUnrounded(item.created_at)
+                    .formatDuration(item.created_at)
                 title.text = item.story_title ?: item.title
                 timeAuthor.text = s
                 articleId.text = item.objectID
